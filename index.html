@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <h2>회원가입</h2>
+    <form id="joinform" action="test.php" method="post" onsubmit="return jbSubmit();">
+        <ul>
+            <li>
+                <p><input type="text" placeholder="아이디" id="id" name="id" class="inputbox box check"></p>
+                <p class="worning">아이디를 입력해주세요.</p>
+            </li>
+            <li>
+                <p><input type="password" placeholder="비밀번호" id="password" name="password" class="inputbox box check"></p>
+                <p class="worning">패스워드를 입력해주세요.</p>
+            </li>
+            <li>
+                <p><input type="password" placeholder="비밀번호 확인" id="checkPass" class="inputbox box check"></p>
+                <p class="worning">패스워드를 확인해주세요.</p>
+            </li>
+            <li>
+                <p><input type="number" placeholder="핸드폰 번호" maxlength="11" id="phone" name="phone" class="inputbox box check"></p>
+                <p class="worning">핸드폰 번호를 입력해주세요.</p>
+            </li>
+            <li>
+                <p><input type="email" placeholder="이메일" id="email" name="email" class="inputbox box check"></p>
+                <p class="worning">이메일을 입력해주세요.</p>
+            </li>
+            <li>
+                <fieldset>
+                    <p>
+                        <label for="male">남성 : </label><input type="radio" id="male" name="gender" value="남성" onclick="check(this)">
+                        <label for="female">여성 : </label><input type="radio" id="female" name="gender" value="여성" onclick="check(this)">
+                    </p>
+                    <p class="gender-label">성별을 선택해주세요.</p>
+                </fieldset>
+            </li>
+            <li>
+                <p>
+                    <input type="number" placeholder="주민등록번호" maxlength="6" id="jumin1" name="jumin1" class="inputbox-jumin box check">
+                    -
+                    <input type="password" id="jumin2" maxlength="7" name="jumin2" class="inputbox-jumin box check">
+                    <input type="button" id="jumin_check" value="검증" class="inputbox-jumin-check btn">
+                </p>
+                <p class="worning">주민등록번호를 입력해주세요.</p>
+            </li>
+            <li>
+                <p>
+                    <input type="text" name="adress1" maxlength="5" placeholder="우편번호" class="inputbox box check">
+                    <input type="text" name="adress2" placeholder="주소" class="inputbox box check">
+                    <input type="text" name="adress3" placeholder="상세주소" class="adressbox box check">
+                    <input type="text" name="adress4" placeholder="참고항목" class="etc-adressbox box">
+                </p>
+                <p class="worning">주소를 입력해주세요.</p>
+            </li>
+            <li>
+                <input type="submit" value="회원가입 하기" id="submit" class="inputbox btn">
+            </li>
+            <li>
+                <input type="reset" value="다시작성" id="reset" class="inputbox btn">
+            </li>
+        </ul>
+    </form>
+    <!-- 아이디, 비밀번호, 비밀번호 확인, 이름, 핸드폰, 이메일, 성별, 취미,
+    주민등록번호, 검증버튼, 우편번호, 주소, 상세주소, 참고항목 -->
+    <!-- 가입완료, 다시작성 -->
+    <script src="./app.js"></script>
+</body>
+</html>

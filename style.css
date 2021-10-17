@@ -1,0 +1,110 @@
+/* common */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 100px;
+}
+
+form {
+  margin-bottom: 100px;
+}
+
+.box {
+  height: 50px;
+  margin-top: 10px;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+}
+
+.btn {
+  height: 50px;
+  margin: 10px 0;
+  border: 0;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* id, class */
+.inputbox {
+  width: 400px;
+}
+
+.inputbox-jumin {
+  width: 150px;
+}
+
+.inputbox-jumin-check {
+  width: 70px;
+  font-size: 16px;
+  background-color: coral;
+}
+
+fieldset {
+  width: 400px;
+  height: 35px;
+  text-align: left;
+  margin: 10px auto;
+  padding: 10px 0 10px 10px;
+  border-radius: 5px;
+  color: rgba(0, 0, 0, 0.6);
+  border: 1px solid #d9d9d9;
+}
+
+.adressbox {
+  width: 285px;
+}
+
+.etc-adressbox {
+  width: 100px;
+}
+
+fieldset p {
+  font-size: 14px;
+  margin-left: 60px;
+}
+#male {
+  margin: 10px 50px 10px 50px;
+}
+#female {
+  margin: 10px 0 10px 50px;
+}
+
+#submit,
+#reset {
+  width: 410px;
+  background-color: coral;
+  font-size: 18px;
+}
+
+#reset {
+  background-color: darkgrey;
+}
+
+.worning {
+  color: red;
+  font-size: 12px;
+  display: flex;
+  margin: 5px 0 0 50px;
+}
+
+.gender-label {
+  color: red;
+  font-size: 12px;
+  display: flex;
+  margin: 15px 0 0 -5px;
+}
